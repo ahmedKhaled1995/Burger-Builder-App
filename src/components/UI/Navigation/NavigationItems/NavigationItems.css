@@ -1,0 +1,22 @@
+.NavigationItems {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for desktop devices */
+@media (min-width: 500px) {
+  .NavigationItems {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

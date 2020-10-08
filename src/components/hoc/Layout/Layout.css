@@ -1,0 +1,4 @@
+.Content {
+  /* 16px + 56px(height of navbar) = 72px  */
+  padding-top: 72px;
+}

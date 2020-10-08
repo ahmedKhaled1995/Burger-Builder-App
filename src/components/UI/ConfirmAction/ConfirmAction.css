@@ -1,0 +1,36 @@
+.ConfirmCard {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 3px solid #555; */
+}
+
+.ConfirmCard p {
+  font-size: 1rem;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Buttons button {
+  margin-left: 16px;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.Success {
+  background-color: lawngreen;
+}
+
+.Danger {
+  background-color: orangered;
+}
+
+.Success:hover {
+  background-color: seagreen;
+}
+
+.Danger:hover {
+  background-color: firebrick;
+}

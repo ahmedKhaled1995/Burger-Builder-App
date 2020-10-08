@@ -1,0 +1,40 @@
+.InputElement {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  display: block;
+  margin: auto;
+
+  padding: 0 20px;
+}
+
+.InputElement p {
+  margin: 0 0 10px 10px;
+  font-size: 0.8rem;
+}
+
+.InputElement input,
+.InputElement select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+
+.Valid {
+  background-color: palegreen;
+}
+
+.InValid {
+  background-color: lightsalmon;
+}
+
+.Default {
+  background-color: #fff;
+}
+
+.InputElement input:focus {
+  outline: none;
+}

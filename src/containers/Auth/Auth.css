@@ -1,0 +1,27 @@
+.Form {
+  width: 90%;
+  margin: auto;
+  /* text-align: center; */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.Form h4 {
+  text-align: center;
+}
+
+.Form form {
+  margin-top: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.btn {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .Form {
+    width: 500px;
+  }
+}

@@ -1,0 +1,51 @@
+.NavigationItem {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.NavigationItem a {
+  color: #8f5c2c;
+  display: block;
+  text-decoration: none;
+  /* height: 100%; */
+
+  box-sizing: border-box;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: #40a4cb;
+}
+
+/* Styling for desktop devices */
+@media (min-width: 500px) {
+  .NavigationItem {
+    /* To Center the links inside the list items */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /* height: 100%; */
+    width: auto;
+    margin: 0;
+  }
+
+  .NavigationItem a {
+    color: #fff;
+    border-bottom: 4px solid transparent;
+    display: block;
+    text-decoration: none;
+    /* height: 100%; */
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    background-color: #8f5c2c;
+    border-bottom: 4px solid #40a4cb;
+  }
+}

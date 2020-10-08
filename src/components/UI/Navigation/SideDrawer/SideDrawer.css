@@ -1,0 +1,33 @@
+.SideDrawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  max-width: 70%;
+  background-color: #fff;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  /* modal(500), backdrop(100) and Toolbar(90) */
+  /* I want it above the backdrop (dark overlay) */
+  z-index: 200;
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+
+.Logo {
+  margin-bottom: 32px;
+}
