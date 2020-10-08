@@ -6,6 +6,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import { createStore, compose, applyMiddleware, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
+import { BrowserRouter } from "react-router-dom";
 
 import burgerReducer from "./store/reducers/burgerBuilderReducer";
 import orderReducer from "./store/reducers/orderReducer";
@@ -39,7 +40,9 @@ const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

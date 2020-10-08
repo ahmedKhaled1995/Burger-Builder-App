@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
 
 import classes from "./Layout.css";
 import Toolbar from "../../UI/Toolbar/Toolbar";
@@ -24,7 +23,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <React.Fragment>
         {/* <div>Toolbar, SideDrawer, Backdrop</div> */}
         <Toolbar hamburgerMenuClicked={this.openSideDrawerHandler} />
         <SideDrawer
@@ -32,7 +31,7 @@ class Layout extends Component {
           clicked={this.closeSideDrawerHandler}
         />
         <main className={classes.Content}>{this.props.children}</main>
-      </BrowserRouter>
+      </React.Fragment>
     );
   }
 }
