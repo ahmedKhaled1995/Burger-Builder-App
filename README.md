@@ -26,7 +26,7 @@ npm install
 2. This project uses Redux to manage the app's state, every thing related to managing the state (reducers, action creators, ...etc) is located
    in 'store' folder inside 'src'.
 
-3. This app uses 'thunk' npm to make asyncrous requests in the action creators.
+3. This app uses 'thunk' npm to make asynchronous requests in the action creators.
 
 4. Component folder contains function componenet, used in building the app's containers.
 
